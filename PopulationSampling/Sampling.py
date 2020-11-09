@@ -1,18 +1,18 @@
-from Calculator.Subtraction import subtraction
+rom Calculator.Subtraction import subtraction
 from Calculator.Addition import addition
 from Calculator.Divison import divison
 from Calculator.multiplication import multiplication
 from Calculator.Sqrt import Sqrt
 from Calculator.Square import Square
+import random
 
-
-class Calculator:
+class Randomize:
     result = 0
 
     def __init__(self):
         pass
 
-    def add(self, a, b):
+    def randimize(self, p, k):
         self.result = addition(a, b)
         return self.result
 
