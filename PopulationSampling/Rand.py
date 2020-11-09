@@ -12,26 +12,33 @@ class Rand:
     def __init__(self):
         pass
 
+
+    def cochransamp(self, a, b):
+
+        return self.result
+
+    def confint(self, a, b):
+
+        return self.result
+
+    def margerr(self, a, b):
+
+        return self.result
+
+    def popfil(self, a, b):
+
+        return self.result
+
+    def randint(self, a, b):
+
+        return self.result
+
+    def randsam(self, a, b):
+
+        return self.result
+
+
     def add(self, a, b):
         self.result = addition(a, b)
         return self.result
 
-    def subtract(self, a, b):
-        self.result = Subtraction(a, b)
-        return self.result
-
-    def multiply(self, a, b):
-        self.result = multiplication(a, b)
-        return self.result
-
-    def divide(self, a, b):
-        self.result = Divison(a, b)
-        return self.result
-
-    def sqr(self, a):
-        self.result = Square(a)
-        return self.result
-
-    def sqrt(self, a, b):
-        self.result = Sqrt(a, b)
-        return self.result

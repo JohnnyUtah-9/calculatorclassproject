@@ -1,12 +1,12 @@
-rom Calculator.Subtraction import subtraction
+from Calculator.Subtraction import subtraction
 from Calculator.Addition import addition
 from Calculator.Divison import divison
 from Calculator.multiplication import multiplication
 from Calculator.Sqrt import Sqrt
 from Calculator.Square import Square
-import random
+from random import random
 
-class Randomize:
+class Sample:
     result = 0
 
     def __init__(self):
