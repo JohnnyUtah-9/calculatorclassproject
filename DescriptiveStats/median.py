@@ -1,10 +1,7 @@
-from Calculator.addition import addition
-from Calculator.division import division
-
-
-def mean(data):
-	num_values = len(data)
-	total = 0
-	for num in data:
-		total = addition(total, num)
-	return division(num_values,total)
+def median(pool):
+	copy = sorted(pool)
+	size = len(copy)
+	if size % 2 == 1:
+		return int(copy[int((size -1) / 2)])
+	else:
+		return int((copy[int(size / 2 - 1)] + copy[int(size / 2)]) / 2)
