@@ -1,6 +1,5 @@
-from random import random
+from Statistics.ZScore import zscore
 
 
-def getSample(data, sample_size):
-    random_values = random.sample(data, k=sample_size)
-    return random_values
+def pvalue(num):
+    return zscore(num)
