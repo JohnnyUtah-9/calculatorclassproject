@@ -6,7 +6,7 @@ from Calculator.Sqrt import Sqrt
 from Calculator.Square import Square
 
 
-class Calculator:
+class Rand:
     result = 0
 
     def __init__(self):
@@ -35,4 +35,3 @@ class Calculator:
     def sqrt(self, a, b):
         self.result = Sqrt(a, b)
         return self.result
-
