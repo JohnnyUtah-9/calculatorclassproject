@@ -1,6 +1,6 @@
-from Calculator.SquareRoot import root
-from Statistics.PopulationMean import populationmean
-from Statistics.StandardDeviation import stddev
+from Calculator.Sqrt import root
+from Stats.MeanPopu import populationmean
+from Stats.sdP import stddev
 
 
 def confidence_interval_bottom(num):

@@ -1,6 +1,6 @@
 from Calculator.Subtraction import subtraction
 from Calculator.Addition import addition
-from Calculator.Divison import divison
+from Calculator.Division import division
 from Calculator.multiplication import multiplication
 from Calculator.Sqrt import Sqrt
 from Calculator.Square import Square
@@ -17,7 +17,7 @@ class Calculator:
         return self.result
 
     def subtract(self, a, b):
-        self.result = Subtraction(a, b)
+        self.result = subtraction(a, b)
         return self.result
 
     def multiply(self, a, b):
@@ -25,7 +25,7 @@ class Calculator:
         return self.result
 
     def divide(self, a, b):
-        self.result = Divison(a, b)
+        self.result = division(a, b)
         return self.result
 
     def sqr(self, a):
