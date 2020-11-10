@@ -5,7 +5,7 @@ from pprint import pprint
 
 
 class MyTestCase(unittest.TestCase):
-    test_data = CsvReader('Tests/Data/Test_Data.csv').data
+    test_data = CsvReader('Tests/Data/###').data
     column1 = [int(row['value1']) for row in test_data]
     column2 = [int(row['value2']) for row in test_data]
     p_answers = CsvReader('Tests/Data/Test_Proportion.csv').data
