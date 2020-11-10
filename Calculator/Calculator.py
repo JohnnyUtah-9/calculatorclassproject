@@ -1,10 +1,3 @@
-from Calculator.Subtraction import subtraction
-from Calculator.Addition import addition
-from Calculator.Division import division
-from Calculator.multiplication import multiplication
-from Calculator.Sqrt import Sqrt
-from Calculator.Square import Square
-
 
 class Calculator:
     result = 0

@@ -1,5 +1,5 @@
 from Calculator.Division import division
-from Calculator.Subtraction import subtract
+from Calculator.Subtraction import subtraction
 from Calculator.Addition import addition
 
 def median(num):

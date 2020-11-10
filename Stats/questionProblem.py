@@ -1,5 +1,5 @@
-from Statistics.Proportion import proportion
-from Statistics.Variance import variance
+from Stats.Proportional import proportion
+from Stats.VarP import variance
 
 
 def variance_of_population_proportion(num):
