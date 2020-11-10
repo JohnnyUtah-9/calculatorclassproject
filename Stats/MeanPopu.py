@@ -8,6 +8,6 @@ def populationmean(num):
         total = sum(num)
         return division(total, num_values)
     except ZeroDivisionError:
-        print("Can't Divide by 0 Error")
+        print("Error: Cannot Divide by 0")
     except ValueError:
-        print("Please Check your data inputs")
+        print("Check your data inputs")
