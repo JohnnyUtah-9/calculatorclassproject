@@ -1,25 +1,17 @@
 import unittest
-
-from Calculator.Calculator import Calculator
-from CsvReader.CsvReader import CsvReader
-
+from CsvReader.CsvReader import CsvReader, ClassFactory
 
 class MyTestCase(unittest.TestCase):
+
     def setUp(self) -> None:
-        self.calculator = Calculator()
+        self.csv_reader = CsvReader('Tests/Data/UnitTestAddition.csv')
 
-    def test_instantiate_calculator(self):
-        self.assertIsInstance(self.calculator, Calculator)
-
-    def test_subtraction(self):
-        test_data = CsvReader("Tests/Data/subtraction.csv").data
-        for row in test_data:
-            result = float(row['Result'])
-            self.assertEqual(self.calculator.subtract(row['Value 1'], row['Value 2']), result)
-            self.assertEqual(self.calculator.result, result)
-
-    def test_results_property(self):
-        self.assertEqual(self.calculator.result, 0)
+    def test_return_data_as_objects(self):
+        people = self.csv_reader.return_data_as_objects('Value 1')
+        self.assertIsInstance(people, list)
+        test_class = ClassFactory('Value 1', self.csv_reader.data[0])
+        for person in people:
+            self.assertEqual(person.__name__, test_class.__name__)
 
 
 if __name__ == '__main__':
