@@ -1,4 +1,5 @@
-from Stats.zScore import zscore
+from pathlib import Path
 
-def pvalue(num):
-    return zscore(num)
+def absolute_path(filepath):
+    relative = Path(filepath)
+    return relative.absolute()
