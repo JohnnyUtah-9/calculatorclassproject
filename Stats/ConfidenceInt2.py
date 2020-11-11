@@ -1,4 +1,4 @@
-from Calculator.Sqrt import root
+from Calculator.Sqrt import Sqrt
 from Stats.MeanPopu import populationmean
 from Stats.sdP import stddev
 

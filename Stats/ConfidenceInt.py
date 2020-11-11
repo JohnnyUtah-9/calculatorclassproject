@@ -1,8 +1,3 @@
-from Calculator.Sqrt import root
-from Stats.MeanPopu import populationmean
-from Stats.sdP import stddev
-
-
 def confidence_interval_bottom(num):
     try:
         num_values = len(num)
