@@ -22,10 +22,10 @@ class Calculator:
         return self.result
 
     def sqr(self, a):
-        self.result = Square(a)
+        self.result = square(a)
         return self.result
 
     def sqrt(self, a, b):
-        self.result = Sqrt(a, b)
+        self.result = sqrt(a, b)
         return self.result
 
