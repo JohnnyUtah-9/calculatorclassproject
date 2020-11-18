@@ -8,8 +8,8 @@ from Stats.Proportional import proportion
 from Stats.zScore import zscore
 from Stats.CorrCoeff import correlation
 from Stats.questionProblem import variance_of_population_proportion
-from Stats.Conf import confidence_interval_top
-from Stats.ConfidenceIntervalBottom import confidence_interval_bottom
+from Stats.ConfidenceInt2 import confidence_interval_top
+from Stats.ConfidenceInt import confidence_interval_bottom
 from Stats.MeanS import samplemean
 from Stats.sdS import samplestddev
 from Stats.VarS import samplevariance
