@@ -1,5 +1,5 @@
 from Stats.MeanPopu import populationmean
-from Stats.sdP import dp import stddev
+from Stats.sdP import stddev
 
 
 def zscore(num):

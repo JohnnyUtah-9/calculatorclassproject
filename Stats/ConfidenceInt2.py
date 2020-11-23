@@ -9,7 +9,7 @@ def confidence_interval_top(num):
         z = 1.96
         sd = stddev(num)
         avg = populationmean(num)
-        return round(avg + (z * sd / root(num_values)), 5)
+        return round(avg + (z * sd / sqrt(num_values)), 5)
     except ZeroDivisionError:
         print("Can't Divide by 0 Error")
     except ValueError:

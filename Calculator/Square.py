@@ -1,2 +1,2 @@
-def square(self, a):
+def square(a):
     return a * a

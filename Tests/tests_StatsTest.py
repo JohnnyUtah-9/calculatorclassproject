@@ -1,21 +1,21 @@
 import unittest
 from CsvReader.CsvReader import CsvReader
-from Statistics.Statistics import Statistics
+from Stats.Statistics import Statistics
 from pprint import pprint
 
 
 class MyTestCase(unittest.TestCase):
-    test_data = CsvReader('Tests/Data/###').data
+    test_data = CsvReader('Tests/Data/TestData').data
     column1 = [int(row['value1']) for row in test_data]
     column2 = [int(row['value2']) for row in test_data]
-    p_answers = CsvReader('Tests/Data/Test_Proportion.csv').data
+    p_answers = CsvReader('Tests/Data/Test_Proportional.csv').data
     z_answers = CsvReader('Tests/Data/Test_ZScores.csv').data
     column_proportion = [float(row['Proportion']) for row in p_answers]
     column_zscore = [float(row['Z-Score']) for row in z_answers]
-    test_answer = CsvReader('Tests/Data/UnitTestStatsAnswers.csv').data
-    sample_data = CsvReader('Tests/Data/Test_Data_Sample.csv').data
+    test_answer = CsvReader('Tests/Data/TestStatAnswers.csv').data
+    sample_data = CsvReader('Tests/Data/DataSampleTest.csv').data
     column3 = [int(row['sample1']) for row in sample_data]
-    sample_answer = CsvReader('Tests/Data/UnitTestSampleAnswers.csv').data
+    sample_answer = CsvReader('Tests/Data/TestStatAnswers.csv').data
 
     def setUp(self) -> None:
         self.statistics = Statistics()

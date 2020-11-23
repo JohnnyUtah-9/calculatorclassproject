@@ -1,4 +1,4 @@
-from Statistics.ZScore import zscore
+from Stats.ZScore import zscore
 
 
 def pvalue(num):
